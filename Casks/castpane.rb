@@ -2,7 +2,7 @@ cask "castpane" do
   version "0.1.2-beta"
   sha256 "cea486355742e7b5899d2c5a4e9e34c629362654d31734a0644a0c8a88281fc9"
 
-  url "https://github.com/xxxxDev/castpane/releases/download/v#{version}/Castpane-#{version.major_minor_patch}-arm64.dmg"
+  url "https://github.com/xxxxDev/castpane/releases/download/v#{version}/Castpane-#{version.sub(/-beta$/, "")}-arm64.dmg"
   name "Castpane"
   desc "See and control this computer from a phone or another computer, in the browser"
   homepage "https://github.com/xxxxDev/castpane"
