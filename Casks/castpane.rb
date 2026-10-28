@@ -1,13 +1,16 @@
 cask "castpane" do
-  version "0.1.2-beta"
-  sha256 "cea486355742e7b5899d2c5a4e9e34c629362654d31734a0644a0c8a88281fc9"
+  arch arm: "arm64", intel: "x86_64"
 
-  url "https://github.com/xxxxDev/castpane/releases/download/v#{version}/Castpane-#{version.sub(/-beta$/, "")}-arm64.dmg"
+  version "0.1.3-beta"
+  sha256 arm:   "994a29d322ee598dcc6f3391fd634299fb3146ac433eb3c37555129330bd9ea8",
+         intel: "aabef80b53b96a5d28429ca35ada988340967dda24d1bfaed35dc60e95310da4"
+
+  url "https://github.com/xxxxDev/castpane/releases/download/v#{version}/Castpane-#{version.sub(/-beta$/, "")}-#{arch}.dmg"
   name "Castpane"
   desc "See and control this computer from a phone or another computer, in the browser"
   homepage "https://github.com/xxxxDev/castpane"
 
-  depends_on arch: :arm64
+  auto_updates true
   depends_on macos: :sonoma
 
   app "Castpane.app"
@@ -30,6 +33,6 @@ cask "castpane" do
     Castpane is signed with the project's own certificate and is not notarized by Apple.
     This cask removes the download's quarantine flag, so it opens without "Open Anyway".
     On first launch its setup assistant asks for Screen Recording and Accessibility; they
-    stay granted across updates.
+    stay granted across updates. Castpane updates itself (Settings › General).
   EOS
 end

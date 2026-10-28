@@ -15,5 +15,6 @@ removes the download's quarantine flag after checking the image's SHA-256, so th
 without **Open Anyway**: you are trusting this tap and the project's releases, as when you
 build it yourself.
 
-Update with `brew upgrade --cask castpane`. Remove with `brew uninstall --cask castpane`;
+Castpane updates itself (it checks GitHub once a day); `brew upgrade --cask --greedy castpane`
+also works. Remove with `brew uninstall --cask castpane`;
 add `--zap` to remove its data folder too.
