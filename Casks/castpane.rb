@@ -1,9 +1,9 @@
 cask "castpane" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.2.7"
-  sha256 arm:   "342265cd35ed324ec560c5a9aca454245e159c70db155e19132472baf067a08e",
-         intel: "79258a9bc1836516f432310094cff135fad9d3faca5e49caf6962e2cd2347442"
+  version "2026.10.31"
+  sha256 arm:   "1459f64b0973bf64e986cd337abce39402138b05265769d9ba047450ee05d7e9",
+         intel: "297b956854fcbdeb97fefc19023a49ef128dd017f0c767268912ee683a01eba6"
 
   url "https://github.com/xxxxDev/castpane/releases/download/v#{version}/Castpane-#{version.sub(/-beta$/, "")}-#{arch}.dmg"
   name "Castpane"
