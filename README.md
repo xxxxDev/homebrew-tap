@@ -8,7 +8,7 @@ brew install --cask xxxxDev/tap/castpane
 
 | Cask | What |
 | --- | --- |
-| [castpane](Casks/castpane.rb) | [Castpane](https://github.com/xxxxDev/castpane): see and control your Mac from a phone or another computer, in the browser. Apple silicon, macOS 14 or later. |
+| [castpane](Casks/castpane.rb) | [Castpane](https://github.com/xxxxDev/castpane): see and control your Mac from a phone or another computer, in the browser. Apple silicon or Intel, macOS 14 (Sonoma) or later. |
 
 Castpane is signed with the project's own certificate and is not notarized by Apple. Its cask
 removes the download's quarantine flag after checking the image's SHA-256, so the app opens
