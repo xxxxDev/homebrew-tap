@@ -1,6 +1,6 @@
 cask "ipa-loom" do
-  version "2026.11.21"
-  sha256 "91f36ee64a406e7922bd5eb23a2d2322f99e67fd1a53775b2c5a8f645ea6f1cf"
+  version "2026.11.28"
+  sha256 "4beafe16f8d42d27ab75a0069659cc2939e80a165aa94ff5735056891b6bc675"
 
   url "https://github.com/xxxxDev/ipa-loom/releases/download/v#{version}/IPA-Loom-#{version}-arm64.dmg"
   name "IPA Loom"
